@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="/Css/style2.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/leis-de-ohm-removebg.png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <header>
+      <a href="#">  
+        <img src="../assets/leis-de-ohm-removebg.png" alt="" />
+      </a>
+      <h1>Calculadora de Ohm</h1>
+      <div class="Menu">
+        <a href="../index.html"><p>Voltar</p></a>
+      </div>
+    </header>
+    
+    <div class="container">
+        <h2>Calculadora das Leis de Ohm</h2>
+        <label for="law-select">Selecione a Lei de Ohm:</label>
+        <select id="law-select" onchange="toggleLaw()">
+            <option value="first">Primeira Lei de Ohm</option>
+            <option value="second">Segunda Lei de Ohm</option>
+        </select>
+
+        <div id="first-law">
+            <label for="first-value">Valor a ser calculado:</label>
+            <select id="first-value">
+                <option value="voltage">Voltagem (V)</option>
+                <option value="current">Corrente (A)</option>
+                <option value="resistance">Resistência (Ω)</option>
+                <option value="power">Potência (W)</option>
+            </select>
+
+            <label for="first-input1">Informe o primeiro valor:</label>
+            <input type="number" id="first-input1" placeholder="Digite o valor" />
+
+            <label for="first-input2">Informe o segundo valor:</label>
+            <input type="number" id="first-input2" placeholder="Digite o valor" />
+
+            <button onclick="calculateFirstLaw()">Calcular</button>
+        </div>
+
+        <div id="second-law" style="display: none;">
+            <label for="second-input1">Informe a Resistividade (ρ):</label>
+            <input type="number" id="second-input1" placeholder="Resistividade em Ω.m" />
+
+            <label for="second-input2">Informe o comprimento (L) em metros:</label>
+            <input type="number" id="second-input2" placeholder="Comprimento (L)" />
+
+            <label for="second-input3">Informe a área da seção transversal (A) em m²:</label>
+            <input type="number" id="second-input3" placeholder="Área (A)" />
+
+            <button onclick="calculateSecondLaw()">Calcular</button>
+        </div>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="/Js/script.js"></script>
+  </body>
+</html>
