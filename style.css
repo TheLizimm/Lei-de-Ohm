@@ -22,13 +22,16 @@ header{
     justify-content: space-between;
 }
 
-header p{
+header h1{
     display: flex;
-    font-size: 24px;
+    position: absolute;
     color: var(--branco);
+    align-self: center;
+    /* margin-left: 100px; */
+    right: 750px;
 }
 
-header img{
+header a img{
     display: flex;
     /* position: absolute; */
     width: 10vw;
@@ -40,9 +43,11 @@ header img{
     display: flex;
     /* background-color: ; */
     align-items: center;
-    width: 40vw;
+    width: 30vw;
     height: 10vh;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .Menu a {
@@ -73,7 +78,7 @@ header img{
 .container {
     display: flex;
     width: 99vw;
-    height: 265vh;
+    height: 285vh;
     justify-content: center;
 }
 
@@ -82,7 +87,7 @@ header img{
     background-color: var(--branco);
     justify-content: flex-start;
     width: 90vw;
-    height: 250vh;
+    height: 270vh;
     margin: 100px;
     border-radius: 10px;
     flex-direction: column;
@@ -184,7 +189,31 @@ tr:nth-child(even) {
     background-color: #423a3a33;
 }
 tr:hover {
-    background-color: #0004fa;
+    background-color: #8b8cf1;
+}
+
+button{
+    display: flex;
+    width: 12vw;
+    height: 5vh;
+    color: var(--branco);
+    font-size: 16px;
+    background-color: var(--azulescuro);
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #060475;
 }
 
 footer{
