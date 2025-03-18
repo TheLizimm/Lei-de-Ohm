@@ -79,7 +79,7 @@ header img{
     background-color: var(--branco);
     justify-content: flex-start;
     width: 90vw;
-    height: 100vh;
+    height: 200vh;
     margin: 100px;
     border-radius: 10px;
     flex-direction: column;
