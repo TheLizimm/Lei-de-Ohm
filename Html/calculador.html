@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <!-- Importa o arquivo de estilo da calculadora -->
     <link rel="stylesheet" href="/Css/Calculadora.css" />
+
+    <!-- Ícone que aparece na aba do navegador -->
     <link
       rel="shortcut icon"
       href="../assets/leis-de-ohm-removebg.png"
       type="image/x-icon"
     />
+
+    <!-- Permite usar acentos e caracteres especiais -->
     <meta charset="UTF-8" />
+
+    <!-- Faz a página funcionar bem em celular e tablet -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da página que aparece na aba do navegador -->
     <title>Calculadora</title>
   </head>
   <body>
     <header>
+      <!-- Link para voltar à página principal com a imagem do logo -->
       <a href="../index.html">  
-        <img src="../assets/leis-de-ohm-removebg.png" alt="" />
+        <img src="../assets/leis-de-ohm-removebg.png" alt="Logo Ohm" />
       </a>
+
+      <!-- Título grande da página -->
       <h1>Calculadora de Ohm</h1>
+
+      <!-- Espaço reservado para o menu, ainda vazio -->
       <div class="Menu">
       </div>
     </header>
-    
+
     <div class="container">
+        <!-- Título da calculadora -->
         <h2>Calculadora das Leis de Ohm</h2>
+
+        <!-- Menu para escolher qual lei usar -->
         <label for="law-select">Selecione a Lei de Ohm:</label>
         <select id="law-select" onchange="toggleLaw()">
             <option value="first">Primeira Lei de Ohm</option>
             <option value="second">Segunda Lei de Ohm</option>
         </select>
 
+        <!-- Área da Primeira Lei de Ohm -->
         <div id="first-law">
+            <!-- Escolhe o que vai ser calculado -->
             <label for="first-value">Valor a ser calculado:</label>
             <select id="first-value">
                 <option value="voltage">Voltagem (V)</option>
@@ -38,31 +57,41 @@
                 <option value="power">Potência (W)</option>
             </select>
 
+            <!-- Primeiro número para o cálculo -->
             <label for="first-input1">Informe o primeiro valor:</label>
             <input type="number" id="first-input1" placeholder="Digite o valor" />
 
+            <!-- Segundo número para o cálculo -->
             <label for="first-input2">Informe o segundo valor:</label>
             <input type="number" id="first-input2" placeholder="Digite o valor" />
 
+            <!-- Botão para calcular -->
             <button onclick="calculateFirstLaw()">Calcular</button>
         </div>
 
+        <!-- Área da Segunda Lei de Ohm -->
         <div id="second-law" style="display: none;">
+            <!-- Campo para digitar a resistividade -->
             <label for="second-input1">Informe a Resistividade (ρ):</label>
             <input type="number" id="second-input1" placeholder="Resistividade em Ω.m" />
 
+            <!-- Campo para o comprimento do fio -->
             <label for="second-input2">Informe o comprimento (L) em metros:</label>
             <input type="number" id="second-input2" placeholder="Comprimento (L)" />
 
+            <!-- Campo para a área do fio -->
             <label for="second-input3">Informe a área da seção transversal (A) em m²:</label>
             <input type="number" id="second-input3" placeholder="Área (A)" />
 
+            <!-- Botão para calcular -->
             <button onclick="calculateSecondLaw()">Calcular</button>
         </div>
 
+        <!-- Aqui aparece o resultado -->
         <div class="result" id="result"></div>
     </div>
 
+    <!-- Arquivo JavaScript com os cálculos -->
     <script src="/Js/script.js"></script>
   </body>
 </html>

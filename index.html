@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="Css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assets/leis-de-ohm-removebg.png"
-      type="image/x-icon"
-    />
+    
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="assets/leis-de-ohm-removebg.png" type="image/x-icon" />
+    
+    <!-- Definição de caracteres especiais -->
     <meta charset="UTF-8" />
+    
+    <!-- Responsividade da página -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lei de Ohn</title>
+    
+    <title>Lei de Ohm</title>
   </head>
   <body>
-    <header>
+    <header> <!--Cabeçalho-->
+      <!-- Logo da página -->
       <a href="#">  
-        <img src="assets/leis-de-ohm-removebg.png" alt="" />
+        <img src="assets/leis-de-ohm-removebg.png" alt="Logo Lei de Ohm" />
       </a>
+      
+      <!-- Título principal da página -->
       <h1>Lei de Ohm</h1>
+      
+      <!-- Menu de navegação com links internos e externos -->
       <div class="Menu">
         <a href="#backText"><p>1º Lei de Ohm</p></a>
         <a href="#secondrule"><p>2º Lei de Ohm</p></a>
         <a href="Html/calculador.html"><p>Calculadora</p></a>
       </div>
     </header>
-    <div class="container">
-      <div id="backText">
-        <h1>1ª lei de Ohm</h1>
+    
+    <div class="container"> <!--Conteudo da pagina-->
+      <div id="backText"> <!--Titulo de uma parte do conteudo-->
+        <h1>1ª lei de Ohm</h1> <!--utilizei h1 pois é o titulo principal-->
         <div class="Text">
-          <p>
+          <!-- Explicação detalhada sobre a 1ª Lei de Ohm -->
+          <p><!--tag P para texto-->
             A primeira lei de Ohm determina que a tensão é proporcional à
             corrente elétrica para uma resistência constante em materiais
             ôhmicos. Já os dispositivos não ôhmicos não obedecem a essa lei,
@@ -36,11 +47,13 @@
             representa a resistência elétrica e nos mostra que à medida que
             aumentamos o valor da ddp, a corrente também aumenta.
           </p>
+          
+          <!-- Resumo da 1ª Lei de Ohm -->
           <h2>Resumo sobre a primeira lei de Ohm:</h2>
-          <ul>
-            <li>
+          <ul> <!--Lista não ordenada-->
+            <li>  <!--item da lista-->
               A primeira lei de Ohm relaciona a tensão elétrica e a corrente
-              elétrica que geram uma resistência elétrica
+              elétrica que geram uma resistência elétrica.
             </li>
             <li>
               A resistência é diretamente proporcional ao potencial, mas
@@ -59,18 +72,23 @@
               resistência, a ddp ou a corrente em um circuito.
             </li>
           </ul>
-          <div class="content">
-            <h3>Formula Da 1ª Lei de Ohm</h3>
-            <img src="assets/formula.jpg" alt="" />
+          
+          
+          <div class="content"> <!--esta class foi para mexer em tudo relaciona ao texto e as imagens no centro da tela-->
+            <!-- Fórmula da 1ª Lei de Ohm -->
+            <h3>Fórmula Da 1ª Lei de Ohm</h3> <!--h3 pois é subtitulo-->
+            <img src="assets/formula.jpg" alt="Fórmula da Lei de Ohm" /> <!--img src para add uma imagem e alt pois é um recurso de acessibilidade-->
             <p>
-              U – Tensão ou potencial elétrico (V), r – resistência elétrica, i
-              – corrente elétrica, Na lei mostrada na figura acima, chamamos de
+              U – Tensão ou potencial elétrico (V), R – resistência elétrica, I
+              – corrente elétrica. Na lei mostrada na figura acima, chamamos de
               U a tensão elétrica ou o potencial elétrico. Essa grandeza é
               escalar e é medida em Volts. A diferença de potencial elétrico
               entre dois pontos de um circuito, por sua vez, indica que ali
-              existe uma resistência elétrica, como mostra a figura
+              existe uma resistência elétrica, como mostra a figura.
             </p>
-            <h4 id="secondrule">2ª lei de Ohm</h4>
+            
+            <!-- Explicação da 2ª Lei de Ohm -->
+            <h4 id="secondrule">2ª lei de Ohm</h4> <!--subtitulo-->
             <p>
               A resistência elétrica R é uma propriedade do corpo que é
               percorrido por uma corrente elétrica. Essa propriedade depende de
@@ -79,20 +97,14 @@
               resistividade. Tal grandeza relaciona-se exclusivamente ao
               material do qual um corpo é formado. A lei que relaciona a
               resistência elétrica a essas grandezas é conhecida como segunda
-              lei de Ohm. A segunda lei de Ohm é mostrada na figura abaixo
+              lei de Ohm. A segunda lei de Ohm é mostrada na figura abaixo.
             </p>
-            <div class="secondimg">
-              <img src="assets/segunda-lei-de-ohm.png" alt="" />
+            
+            <!-- Imagem explicativa da 2ª Lei de Ohm -->
+            <div class="secondimg"> <!--utilizei esta div para mexer somente nesta imagem-->
+              <img src="assets/segunda-lei-de-ohm.png" alt="Segunda Lei de Ohm" />
             </div>
-            <p>
-              "R – resistência elétrica (Ω) ρ – resistividade (Ω.m) L –
-              comprimento (m) A – área transversal (m²) Chamamos de resistor
-              ôhmico todo corpo capaz de apresentar resistência elétrica
-              constante para um determinado intervalo de tensões elétricas. O
-              gráfico de tensão em função da corrente elétrica para os
-              resistores ôhmicos é linear, como mostra a figura abaixo
-            </p>
-
+            
             <h4>Cálculo da potência elétrica pela lei de Ohm</h4>
             <p>
               "Por meio da lei de Ohm, é possível determinar a potência elétrica
@@ -101,30 +113,22 @@
               dissipada, estamos determinando a quantidade de energia elétrica
               que um resistor é capaz de converter em calor, a cada segundo.
             </p>
-            <div class="thirdimg">
-              <img src="assets/potencia-eletrica.png" alt="" />
+            
+            <!-- Imagem sobre potência elétrica -->
+            <div class="thirdimg"> <!--mexer somente nesta imagem-->
+              <img src="assets/potencia-eletrica.png" alt="Potência Elétrica" />
             </div>
-            <!-- <p>P – Potência elétrica (W) <br>
-
-                            E – Energia (J) <br>
-                            
-                            Δt – Intervalo de tempo (s) <br>
-                            
-                            R – Resistência (Ω) <br>
-                            
-                            i – Corrente elétrica (A)<br>
-                            
-                            U – Potencial elétrico (V)
-                            </p> -->
-            <table border="1">
-              <thead>
-                <tr>
-                  <th>Sigla</th>
+            
+            <!-- Tabela de grandezas elétricas -->
+            <table border="1"> <!--utilizei a table para criar uma tabela e border 1 para mexer na borda-->
+              <thead> <!--cabeça da tabela-->
+                <tr> <!--Linha da Tabela-->
+                  <th>Sigla</th> <!--tag Th para Cabeçalho da Tabela-->
                   <th>Significado</th>
                   <th>Medida</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody> <!--corpo da tabela-->
                 <tr>
                   <td>P</td>
                   <td>Potência elétrica</td>
@@ -146,7 +150,7 @@
                   <td>Ω</td>
                 </tr>
                 <tr>
-                  <td>i</td>
+                  <td>I</td>
                   <td>Corrente elétrica</td>
                   <td>A</td>
                 </tr>
@@ -157,17 +161,20 @@
                 </tr>
               </tbody>
             </table>
+            
+            <!-- Botão para acessar a calculadora -->
             <a href="Html/calculador.html">
-                <button>Teste Na Calculadora</button>
+                <button>Teste Na Calculadora</button> <!--criei um botão pois quando eu clicar vai direto para a calculadora e o linkei com a tag <a> para que isso ocorra-->
             </a>
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- Rodapé da página -->
     <footer>
       <p>
-        &copy; Todos os direitos reservados à Luis Felipe Carvalho De Siqueira
-        Barros
+        &copy; Todos os direitos reservados à Luis Felipe Carvalho De Siqueira Barros <!--&copy para criar o simbolo e dediquei todos os direitos a mim-->
       </p>
     </footer>
   </body>
